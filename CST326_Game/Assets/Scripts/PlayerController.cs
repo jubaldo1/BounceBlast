@@ -27,6 +27,12 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate () {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
+        /*
+        // slow player down
+        if (Input.GetKey(KeyCode.LeftShift) && rb.velocity != ))
+        {
+            rb.AddForce(-transform.forward, ForceMode.Force);
+        }*/
 
         rb.AddForce(transform.right * h * speed, ForceMode.Force);
         rb.AddForce(transform.forward * v * speed, ForceMode.Force);

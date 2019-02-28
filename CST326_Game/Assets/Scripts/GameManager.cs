@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour {
         floatTime += Time.deltaTime;
         intTime = (int)floatTime;
 
-        if ((startTime - intTime) == 0)
+        if ((startTime - intTime) <= 0)
         {
             time.text = "Time: " + 0;
             time.enabled = false;
